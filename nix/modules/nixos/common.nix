@@ -48,16 +48,10 @@
 
   environment.systemPackages = with pkgs; [
 
-    # --- later to essentials.nix ---
-
-    # Internet
-    librewolf
-
     # Tools
     git
     btop
     unzip
-    vscode
     cpu-x
     putty
     veracrypt

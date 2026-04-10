@@ -14,6 +14,8 @@
     bitwarden-desktop
     libreoffice
     naps2
+    vscode
+    chromium
 
     # Media
     spotify

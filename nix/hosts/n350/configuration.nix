@@ -7,8 +7,7 @@
     flake.modules.nixos.graphical
   ];
 
-  boot.initrd.luks.devices."luks-54a0fdb6-f55a-4eab-bc9d-87658a5bc7ad".device =
-    "/dev/disk/by-uuid/54a0fdb6-f55a-4eab-bc9d-87658a5bc7ad";
+  # TODO: replace with generated config!!!
 
   # Enable networking
   networking.networkmanager.enable = true;
