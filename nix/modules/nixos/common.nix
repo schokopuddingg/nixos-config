@@ -14,6 +14,8 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  home-manager.backupFileExtension = "bac";
+
   users.users.schokopuddingg = {
     isNormalUser = true;
     description = "Schokopuddingg";
