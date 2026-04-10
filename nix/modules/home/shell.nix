@@ -1,14 +1,17 @@
 { pkgs, ... }:
 {
 
-  import = [
+  imports = [
     ./fonts.nix
   ];
+
+  programs.oh-my-posh.enable = true;
 
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
       eval "$(oh-my-posh init fish --config ~/.config/ohmyposh/zen.toml)"
+      fastfetch
     '';
   };
 
@@ -52,7 +55,7 @@
 
   programs.starship = {
     enable = true;
-    presets = [ "pastel-powerline" ];
+    presets = [ "nerd-font-symbols" ];
     settings = {
 
     };

@@ -12,7 +12,7 @@
     inputs.niri.homeModules.niri
   ];
 
-nix = {
+  nix = {
     settings = {
       warn-dirty = false;
       download-buffer-size = 524288000; # 500 MiB
@@ -26,16 +26,16 @@ nix = {
         "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
       ];
     };
-};
+  };
 
   programs.niri = {
     enable = true;
     settings = {
       spawn-at-startup = [
         {
-        command = [
-          (lib.getExe config.programs.noctalia-shell.package)
-        ];
+          command = [
+            (lib.getExe config.programs.noctalia-shell.package)
+          ];
         }
       ];
 
@@ -66,7 +66,7 @@ nix = {
           "Mod+Shift+V".action.spawn-sh = noctalia "launcher clipboard";
           "Mod+H".action.show-hotkey-overlay = [ ];
 
-          "Mod+Return".action.spawn-sh = lib.getExe pkgs.kitty;
+          "Mod+Return".action.spawn-sh = lib.getExe pkgs.alacritty;
           "Mod+Q".action.close-window = [ ];
 
           # --- Standard Niri Keybinds ---

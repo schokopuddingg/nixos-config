@@ -1,6 +1,14 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./shell.nix
+  ];
+
   home.packages = with pkgs; [
+
+    # Internet
+    chromium
+    
     # Social Media / Messaging
     signal-desktop
     gajim
