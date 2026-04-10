@@ -8,7 +8,7 @@
 
     # Internet
     chromium
-    
+
     # Social Media / Messaging
     signal-desktop
     gajim
@@ -23,7 +23,6 @@
     libreoffice
     naps2
     vscode
-    chromium
 
     # Media
     spotify
