@@ -14,8 +14,8 @@
   programs.niri.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = false;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = false;
+  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -25,7 +25,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  
+
 
   environment.systemPackages = with pkgs; [
 
