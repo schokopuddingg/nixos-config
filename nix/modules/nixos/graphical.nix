@@ -10,6 +10,9 @@
   # Enable ly
   services.displayManager.ly.enable = true;
 
+  # Enable niri
+  programs.niri.enable = true;
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = false;
   services.xserver.desktopManager.gnome.enable = true;
