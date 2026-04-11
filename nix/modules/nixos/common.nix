@@ -54,26 +54,16 @@
     git
     btop
     unzip
-    cpu-x
     putty
-    veracrypt
-    cryptomator
-    xournalpp
-    localsend
     bluetuith
     screen
     wget
     rsync
     neovim
-    filezilla
     traceroute
     fastfetch
 
     # Media
-    vlc
-    pix
-    mpv
-    flameshot
     superfile
     ffmpeg
     imagemagick

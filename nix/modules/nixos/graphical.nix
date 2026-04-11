@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./audio.nix
@@ -21,4 +22,21 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  environment.systemPackages = with pkgs; [
+
+    # Tools
+    cpu-x
+    veracrypt
+    cryptomator
+    xournalpp
+    localsend
+    filezilla
+
+    # Media
+    vlc
+    pix
+    mpv
+    flameshot
+  ];
 }

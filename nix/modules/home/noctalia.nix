@@ -9,13 +9,51 @@
     enable = true;
     settings = {
       location = {
-        name = "Munich, Germany";
+        name = "";
+        weatherEnabled = true;
+        weatherShowEffects = true;
+        weatherTaliaMascotAlways = false;
+        useFahrenheit = false;
+        use12hourFormat = false;
+        showWeekNumberInCalendar = false;
+        showCalendarEvents = true;
+        showCalendarWeather = true;
+        analogClockInCalendar = false;
         firstDayOfWeek = 0;
+        hideWeatherTimezone = false;
+        hideWeatherCityName = false;
+        autoLocate = true;
       };
-      colorSchemes.predefinedScheme = "Rose Pine";
+      colorSchemes = {
+        useWallpaperColors = false;
+        predefinedScheme = "Noctalia (default)";
+        darkMode = true;
+      };
       appLauncher = {
         enableClipboardHistory = true;
         enableClipPreview = true;
+        clipboardWrapText = true;
+        enableClipboardSmartIcons = true;
+        enableClipboardChips = true;
+        clipboardWatchTextCommand = "wl-paste --type text --watch cliphist store";
+        clipboardWatchImageCommand = "wl-paste --type image --watch cliphist store";
+        position = "center";
+        pinnedApps = [ ];
+        sortByMostUsed = true;
+        terminalCommand = "alacritty -e";
+        customLaunchPrefixEnabled = false;
+        customLaunchPrefix = "";
+        viewMode = "list";
+        showCategories = true;
+        iconMode = "tabler";
+        showIconBackground = false;
+        enableSettingsSearch = true;
+        enableWindowsSearch = true;
+        enableSessionSearch = true;
+        ignoreMouseInput = false;
+        screenshotAnnotationTool = "";
+        overviewLayer = false;
+        density = "default";
       };
       noctaliaPerformance = {
         disableDesktopWidgets = true;
@@ -92,6 +130,8 @@
       };
     };
     plugins = {
+      autoUpdate = false;
+      notifyUpdates = true;
       sources = [
         {
           enabled = true;
@@ -109,6 +149,18 @@
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         polkit-agent = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        screen-toolkit = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        network-manager-vpn = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        mirror-mirror = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };

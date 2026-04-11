@@ -11,6 +11,7 @@
 
     # Social Media / Messaging
     signal-desktop
+    whatsapp-electron
     gajim
     ferdium
     element-desktop

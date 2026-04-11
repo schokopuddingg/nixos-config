@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     flake.modules.nixos.common
     flake.modules.nixos.graphical
+    flake.modules.nixos.wireless
   ];
 
   boot.initrd.luks.devices."luks-54a0fdb6-f55a-4eab-bc9d-87658a5bc7ad".device =

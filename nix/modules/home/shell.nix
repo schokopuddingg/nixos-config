@@ -55,7 +55,7 @@
 
   programs.starship = {
     enable = true;
-    presets = [ "nerd-font-symbols" ];
+    presets = [ "catppuccin-powerline" ];
     settings = {
 
     };
