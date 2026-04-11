@@ -30,7 +30,6 @@
     darktable
     rawtherapee
     gimp
-    steam
     mastodon
     ardour
     audacity
