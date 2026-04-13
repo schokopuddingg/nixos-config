@@ -2,37 +2,12 @@
 {
   imports = [
     ./shell.nix
+    ./media.nix
+    ./social.nix
+    ./office.nix
   ];
 
   home.packages = with pkgs; [
 
-    # Internet
-    chromium
-
-    # Social Media / Messaging
-    signal-desktop
-    whatsapp-electron
-    gajim
-    ferdium
-    element-desktop
-    telegram-desktop
-    discord
-    thunderbird
-
-    # Tools / Office
-    bitwarden-desktop
-    libreoffice
-    naps2
-    vscode
-
-    # Media
-    spotify
-    darktable
-    rawtherapee
-    gimp
-    mastodon
-    ardour
-    audacity
-    freetube
   ];
 }

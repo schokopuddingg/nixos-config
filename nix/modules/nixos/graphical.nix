@@ -2,6 +2,7 @@
 {
   imports = [
     ./audio.nix
+    ./browsers.nix
   ];
 
   # Enable the X11 windowing system.
@@ -33,9 +34,6 @@
     cpu-x
     veracrypt
     cryptomator
-    xournalpp
-    localsend
-    filezilla
 
     # Media
     vlc
