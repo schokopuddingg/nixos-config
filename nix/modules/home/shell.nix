@@ -10,6 +10,7 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
+      set fish_greeting # Disable greeting
       eval "$(oh-my-posh init fish --config ~/.config/ohmyposh/zen.toml)"
       fastfetch
     '';

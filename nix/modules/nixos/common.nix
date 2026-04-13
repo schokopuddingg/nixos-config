@@ -14,6 +14,9 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
+
   home-manager.backupFileExtension = "bac";
 
   users.users.schokopuddingg = {
