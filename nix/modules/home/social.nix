@@ -12,6 +12,6 @@
     discord
     thunderbird
     tuba
-    
+
   ];
 }

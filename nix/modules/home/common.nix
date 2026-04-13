@@ -5,6 +5,7 @@
     ./media.nix
     ./social.nix
     ./office.nix
+    ./code.nix
   ];
 
   home.packages = with pkgs; [

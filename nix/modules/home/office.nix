@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
 
-imports = [
-  ./tex.nix
-];
+  imports = [
+    ./tex.nix
+  ];
 
   home.packages = with pkgs; [
 

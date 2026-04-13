@@ -1,0 +1,71 @@
+{
+  imports = [
+    ./opencode.nix
+  ];
+
+  programs.zed-editor = {
+    enable = true;
+    extensions = [
+      "git-firefly"
+      "github-actions"
+      "html"
+      "material-icon-theme"
+      "nix"
+      "toml"
+    ];
+
+    userSettings = {
+      colorize_brackets = true;
+      autosave = "on_focus_change";
+      icon_theme = "Material Icon Theme";
+      features = {
+        edit_prediction_provider = "copilot";
+      };
+      ui_font_size = 16;
+      buffer_font_size = 15;
+      theme = {
+        mode = "dark";
+        light = "One Light";
+        dark = "One Dark";
+      };
+      buffer_font_family = "FiraCode Nerd Font";
+      buffer_font_features = {
+        calt = true;
+      };
+      load_direnv = "shell_hook";
+      git_hosting_providers = [
+        {
+          provider = "github";
+          name = "GitHub";
+          base_url = "https://github.com";
+        }
+      ];
+      calls.mute_on_join = true;
+      agent_servers = {
+        opencode = {
+          type = "custom";
+          command = "opencode";
+          args = [ "acp" ];
+          env = { };
+        };
+      };
+    };
+
+    userKeymaps = [
+      {
+        context = "Pane";
+        bindings = {
+          ctrl-tab = "pane::ActivateNextItem";
+          ctrl-shift-tab = "pane::ActivatePreviousItem";
+        };
+      }
+      {
+        context = "Editor";
+        bindings = {
+          "ctrl-t" = "workspace::NewCenterTerminal";
+          "ctrl-k" = "editor::ToggleComments";
+        };
+      }
+    ];
+  };
+}

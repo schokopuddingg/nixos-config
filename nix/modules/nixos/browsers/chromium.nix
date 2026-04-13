@@ -1,5 +1,5 @@
 {
-    programs.chromium = {
+  programs.chromium = {
     enable = true;
     extensions = [
       "ddkjiahejlhfcafbddmgiahcphecmpfh" # uBlock Origin Lite
@@ -20,9 +20,9 @@
       "​ReportDeviceCrashReportInfo" = "true";
       "​SpellcheckEnabled" = "true";
       "​SpellcheckLanguage" = [
-                               "de"
-                               "en-US"
-                             ];
+        "de"
+        "en-US"
+      ];
       "​CloudPrintSubmitEnabled" = "false";
     };
   };
