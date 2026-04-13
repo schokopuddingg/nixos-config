@@ -9,7 +9,7 @@ let
     name = guid;
     value = {
       install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
-      installation_mode = "normal_installed";
+      installation_mode = "force_installed";
     };
   };
 
@@ -25,6 +25,7 @@ let
     # the short ID in the url (like https://addons.mozilla.org/en-US/firefox/addon/!SHORT_ID!/)
     # Then go to https://addons.mozilla.org/api/v5/addons/addon/!SHORT_ID!/ to get the guid
     (extension "ublock-origin" "uBlock0@raymondhill.net")
+    (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
     # ...
   ];
 
@@ -47,6 +48,12 @@ in
           SearchEngines = {
             Default = "ddg";
             Add = [
+              {
+                Name = "SearXNG";
+                URLTemplate = "http://searx.poteczin.de/search?q={searchTerms}";
+                IconURL = "https://searx.poteczin.de/favicon.ico";
+                Alias = "@srx";
+              }
               {
                 Name = "nixpkgs packages";
                 URLTemplate = "https://search.nixos.org/packages?query={searchTerms}";
