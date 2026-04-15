@@ -66,6 +66,7 @@
     neovim
     traceroute
     fastfetch
+    nmap
 
     # Media
     superfile
