@@ -12,6 +12,7 @@
         "DP-1" = "../../static/img/wallpapers/cch-stairs.jpg";
       };
     };
+  };
 
   programs.noctalia-shell = {
     enable = true;
