@@ -108,6 +108,9 @@
             {
               id = "Workspace";
             }
+            {
+              id = "plugin:privacy-indicator";
+            }
           ];
           right = [
             {
@@ -118,6 +121,12 @@
             }
             {
               id = "plugin:tailscale";
+            }
+            {
+              id = "plugin:mirror-mirror";
+            }
+            {
+              id = "plugin:network-manager-vpn";
             }
             {
               id = "Battery";
@@ -133,6 +142,9 @@
             }
             {
               id = "plugin:catwalk";
+            }
+            {
+              id = "plugin:screen-toolkit";
             }
           ];
         };
@@ -170,6 +182,10 @@
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         mirror-mirror = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        privacy-indicator = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
