@@ -5,6 +5,14 @@
     inputs.noctalia.homeModules.default
   ];
 
+  home.file.".cache/noctalia/wallpapers.json" = {
+    text = builtins.toJSON {
+      defaultWallpaper = "../../static/img/wallpapers/cch-stairs.jpg";
+      wallpapers = {
+        "DP-1" = "../../static/img/wallpapers/cch-stairs.jpg";
+      };
+    };
+
   programs.noctalia-shell = {
     enable = true;
     settings = {
@@ -130,7 +138,7 @@
       };
     };
     plugins = {
-      autoUpdate = false;
+      autoUpdate = true;
       notifyUpdates = true;
       sources = [
         {

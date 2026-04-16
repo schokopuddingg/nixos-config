@@ -10,7 +10,6 @@
     bitwarden-desktop
     libreoffice
     naps2
-    vscode
     xournalpp
     filezilla
 
