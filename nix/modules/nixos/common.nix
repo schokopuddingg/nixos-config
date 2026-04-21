@@ -72,6 +72,7 @@
     superfile
     ffmpeg
     imagemagick
+    gparted
 
   ];
 }

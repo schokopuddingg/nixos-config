@@ -3,10 +3,10 @@
 {
   services.tailscale = {
     enable = true;
-  }
+  };
   networking.nftables = {
     enable = true;
-  }
+  };
   networking.firewall = {
     enable = true;
     trustedInterfaces =[ "tailscale0"];
