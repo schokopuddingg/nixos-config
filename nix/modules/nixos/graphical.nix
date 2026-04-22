@@ -3,6 +3,7 @@
   imports = [
     ./audio.nix
     ./browsers.nix
+    ./fprint.nix
   ];
 
   # Enable the X11 windowing system.
