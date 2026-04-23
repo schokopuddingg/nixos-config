@@ -9,7 +9,7 @@
   };
   networking.firewall = {
     enable = true;
-    trustedInterfaces =[ "tailscale0"];
+    trustedInterfaces = [ "tailscale0" ];
     allowedUDPPorts = [ config.services.tailscale.port ];
   };
   systemd.services.tailscaled.serviceConfig.Environment = [
