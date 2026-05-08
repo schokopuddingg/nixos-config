@@ -87,5 +87,8 @@
     pix
     mpv
     flameshot
+
+    # VPN
+    wireguard-ui
   ];
 }
