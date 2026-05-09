@@ -81,6 +81,7 @@
     cpu-x
     veracrypt
     cryptomator
+    rpi-imager
 
     # Media
     vlc
