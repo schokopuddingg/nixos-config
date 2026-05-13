@@ -5,6 +5,7 @@
 
     freecad
     openscad
+    orca-slicer
 
   ];
 }
