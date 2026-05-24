@@ -10,6 +10,7 @@
     flake.modules.nixos.wine
     flake.modules.nixos.gc
     flake.modules.nixos.tailscale
+    flake.modules.nixos.virtualization
   ];
 
   boot.initrd.luks.devices."luks-45feae73-f6ff-4c5c-a316-64b15f355fee".device =

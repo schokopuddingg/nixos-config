@@ -82,6 +82,7 @@
     veracrypt
     cryptomator
     rpi-imager
+    mqtt-explorer
 
     # Media
     vlc
