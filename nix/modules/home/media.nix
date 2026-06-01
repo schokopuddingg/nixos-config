@@ -12,6 +12,7 @@
     audacity
     freetube
     localsend
+    lmms
 
   ];
 }
