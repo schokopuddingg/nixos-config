@@ -35,8 +35,8 @@
       };
       colorSchemes = {
         useWallpaperColors = false;
-        predefinedScheme = "Noctalia (default)";
         darkMode = true;
+        syncGsettings = true;
       };
       appLauncher = {
         enableClipboardHistory = true;

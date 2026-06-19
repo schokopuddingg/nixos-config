@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
 
     freecad
-    openscad
+    openscad-unstable
     orca-slicer
 
   ];
