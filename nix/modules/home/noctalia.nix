@@ -7,9 +7,9 @@
 
   home.file.".cache/noctalia/wallpapers.json" = {
     text = builtins.toJSON {
-      defaultWallpaper = "/home/schokopuddingg/Pictures/Wallpapers/messe-frankfurt-entry.jpg";
+      defaultWallpaper = "/home/schokopuddingg/nixos-config/nix/static/img/wallpapers/white-pink-logo.png";
       wallpapers = {
-        "DP-1" = "/home/schokopuddingg/Pictures/Wallpapers/messe-frankfurt-entry.jpg";
+        "DP-1" = "/home/schokopuddingg/nixos-config/nix/static/img/wallpapers/white-pink-logo.png";
       };
     };
   };
