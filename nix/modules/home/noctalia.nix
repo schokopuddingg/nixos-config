@@ -7,9 +7,9 @@
 
   home.file.".cache/noctalia/wallpapers.json" = {
     text = builtins.toJSON {
-      defaultWallpaper = "../../static/img/wallpapers/cch-stairs.jpg";
+      defaultWallpaper = "/home/schokopuddingg/Pictures/Wallpapers/messe-frankfurt-entry.jpg";
       wallpapers = {
-        "DP-1" = "../../static/img/wallpapers/cch-stairs.jpg";
+        "DP-1" = "/home/schokopuddingg/Pictures/Wallpapers/messe-frankfurt-entry.jpg";
       };
     };
   };
@@ -17,6 +17,23 @@
   programs.noctalia-shell = {
     enable = true;
     settings = {
+      general = {
+        lockScreenAnimations = true;
+        lockOnSuspend = true;
+        showSessionButtonsOnLockScreen = true;
+        showHibernateOnLockScreen = true;
+        enableLockScreenMediaControls = true;
+        showChangelogOnStartup = false;
+        telemetryEnabled = false;
+        enableLockScreenCountdown = true;
+        lockScreenCountdownDuration = 10000;
+        allowPasswordWithFprintd = true;
+        clockStyle = "custom";
+        clockFormat = "HH:mm:ss";
+        passwordChars = true;
+        lockScreenBlur = 1;
+      };
+
       location = {
         name = "";
         weatherEnabled = true;
@@ -33,11 +50,26 @@
         hideWeatherCityName = false;
         autoLocate = true;
       };
+
+      wallpaper = {
+        enabled = true;
+        overviewEnabled = true;
+        useOriginalImages = true;
+      };
+
       colorSchemes = {
         useWallpaperColors = false;
-        darkMode = true;
+        predefinedScheme = "Ayu Green";
+        schedulingMode = "location";
         syncGsettings = true;
       };
+
+      brightness = {
+        brightnessStep = 5;
+        enforceMinimum = true;
+        enableDdcSupport = true;
+      };
+
       appLauncher = {
         enableClipboardHistory = true;
         enableClipPreview = true;
@@ -64,12 +96,23 @@
         overviewLayer = false;
         density = "default";
       };
+
       noctaliaPerformance = {
         disableDesktopWidgets = true;
       };
+
       sessionMenu = {
         countdownDuration = 3000;
       };
+
+      idle = {
+        enabled = true;
+        screenOffTimeout = 600;
+        lockTimeout = 660;
+        suspendTimeout = 1800;
+        fadeDuration = 5;
+      };
+
       dock.enabled = false;
       notifications = {
         location = "top_right";
@@ -83,6 +126,83 @@
           critical = true;
         };
       };
+
+      osd = {
+        enabled = true;
+        location = "bottom_center";
+        autoHideMs = 2000;
+        overlayLayer = true;
+        backgroundOpacity = 1;
+        enabledTypes = [
+          0
+          1
+          2
+          3
+        ];
+        monitors = [ ];
+      };
+
+      controlCenter = {
+        position = "close_to_bar_button";
+        diskPath = "/";
+        shortcuts = {
+          left = [
+            {
+              id = "Network";
+            }
+            {
+              id = "Bluetooth";
+            }
+            {
+              id = "WallpaperSelector";
+            }
+            {
+              id = "NoctaliaPerformance";
+            }
+          ];
+          right = [
+            {
+              id = "Notifications";
+            }
+            {
+              id = "PowerProfile";
+            }
+            {
+              id = "KeepAwake";
+            }
+            {
+              id = "NightLight";
+            }
+          ];
+        };
+        cards = [
+          {
+            enabled = true;
+            id = "profile-card";
+          }
+          {
+            enabled = true;
+            id = "shortcuts-card";
+          }
+          {
+            enabled = true;
+            id = "audio-card";
+          }
+          {
+            enabled = true;
+            id = "brightness-card";
+          }
+          {
+            enabled = true;
+            id = "weather-card";
+          }
+          {
+            enabled = true;
+            id = "media-sysmon-card";
+          }
+        ];
+      };
+
       bar = {
         position = "top";
         showCapsule = true;
@@ -150,6 +270,7 @@
         };
       };
     };
+
     plugins = {
       autoUpdate = true;
       notifyUpdates = true;

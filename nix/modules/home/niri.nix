@@ -71,10 +71,16 @@
           "Mod+R".action.switch-preset-column-width = [ ];
           "Mod+F".action.maximize-column = [ ];
           "Mod+Shift+F".action.fullscreen-window = [ ];
+          "Mod+Alt+Right".action.consume-or-expel-window-right = [ ];
+          "Mod+Alt+Left".action.consume-or-expel-window-left = [ ];
 
           # monitor focus
           "Mod+Page_Up".action.focus-monitor-up = [ ];
           "Mod+Page_Down".action.focus-monitor-down = [ ];
+
+          # tiling
+          "Mod+y".action.toggle-window-floating = [ ];
+          "Mod+Shift+y".action.toggle-window-floating = [ ];
 
           # overview
           "Mod+O".action.toggle-overview = [ ];
