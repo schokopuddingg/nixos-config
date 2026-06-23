@@ -66,7 +66,7 @@
     enable = true;
     daemon.enable = true;
     settings = {
-      style = "compact";
+      style = "auto";
       serch_mode = "skim";
       stats.common_prefix = [
         "sudo"

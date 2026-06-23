@@ -10,6 +10,5 @@
     flake.homeModules.dev
   ];
 
-
   home.stateVersion = "25.11";
 }
