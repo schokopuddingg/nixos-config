@@ -67,6 +67,7 @@
     traceroute
     fastfetch
     nmap
+    busybox
 
     # Media
     superfile

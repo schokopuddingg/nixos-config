@@ -10,7 +10,11 @@
   networking.firewall = {
     enable = true;
     trustedInterfaces = [ "tailscale0" ];
-    allowedUDPPorts = [ config.services.tailscale.port ];
+    allowedTCPPorts = [ 23 80 443 ];
+    allowedUDPPorts = [
+      config.services.tailscale.port
+
+    ];
   };
   systemd.services.tailscaled.serviceConfig.Environment = [
     "TS_DEBUG_FIREWALL_MODE=nftables"
