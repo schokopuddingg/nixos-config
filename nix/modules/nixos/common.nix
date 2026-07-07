@@ -68,6 +68,7 @@
     fastfetch
     nmap
     busybox
+    qalculate-qt
 
     # Media
     superfile

@@ -12,6 +12,7 @@
     naps2
     xournalpp
     filezilla
+    ausweisapp
 
   ];
 }
