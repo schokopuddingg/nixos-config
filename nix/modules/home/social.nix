@@ -12,6 +12,8 @@
     discord
     thunderbird
     tuba
+    nheko
+    movim
 
   ];
 }

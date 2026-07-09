@@ -39,6 +39,7 @@
       nixpkgs.config.allowUnfree = true;
       nixpkgs.config.permittedInsecurePackages = [
         "electron-39.8.10"
+        "olm-3.2.16"
       ];
     };
 }
