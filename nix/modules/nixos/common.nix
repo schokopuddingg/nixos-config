@@ -59,7 +59,6 @@
     btop
     unzip
     putty
-    bluetuith
     screen
     wget
     rsync

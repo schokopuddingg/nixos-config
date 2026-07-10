@@ -9,7 +9,7 @@
     flake.modules.nixos.gaming
     flake.modules.nixos.wine
     flake.modules.nixos.gc
-    flake.modules.nixos.tailscale
+    flake.modules.nixos.networking
     flake.modules.nixos.virtualization
     flake.modules.nixos.print
   ];

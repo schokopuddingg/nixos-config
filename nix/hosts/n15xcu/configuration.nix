@@ -9,7 +9,7 @@
     flake.modules.nixos.gaming
     flake.modules.nixos.wine
     flake.modules.nixos.gc
-    flake.modules.nixos.tailscale
+    flake.modules.nixos.networking
   ];
 
   boot.initrd.luks.devices."luks-63309168-4c90-4251-9880-8e1f5c202e7d".device =
