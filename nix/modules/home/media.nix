@@ -7,12 +7,14 @@
     darktable
     rawtherapee
     gimp
+    inkscape
     mastodon
     ardour
     audacity
     freetube
     localsend
     lmms
+    picard
 
   ];
 }
