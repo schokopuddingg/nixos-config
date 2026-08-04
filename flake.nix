@@ -38,7 +38,7 @@
       prefix = "nix/";
       nixpkgs.config.allowUnfree = true;
       nixpkgs.config.permittedInsecurePackages = [
-        "electron-39.8.10"
+        "electron-40.10.5"
         "olm-3.2.16"
       ];
     };
