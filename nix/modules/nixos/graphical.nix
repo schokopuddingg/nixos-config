@@ -89,6 +89,7 @@
     pix
     mpv
     flameshot
+    wl-mirror
 
     # VPN
     wireguard-ui

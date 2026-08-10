@@ -14,6 +14,9 @@
     tuba
     nheko
     movim
+    commet-chat
+    fractal
+    chatty
 
   ];
 }
