@@ -95,6 +95,16 @@
           "Mod+1".action.focus-workspace = 1;
           "Mod+2".action.focus-workspace = 2;
 
+          "Mod+Ctrl+Right".action.focus-monitor-right = [ ];
+          "Mod+Ctrl+Left".action.focus-monitor-left = [ ];
+          "Mod+Ctrl+Up".action.focus-monitor-up = [ ];
+          "Mod+Ctrl+Down".action.focus-monitor-down = [ ];
+
+          "Mod+Ctrl+Shift+Right".action.move-workspace-to-monitor-right = [ ];
+          "Mod+Ctrl+Shift+Left".action.move-workspace-to-monitor-left = [ ];
+          "Mod+Ctrl+Shift+Up".action.move-workspace-to-monitor-up = [ ];
+          "Mod+Ctrl+Shift+Down".action.move-workspace-to-monitor-down = [ ];
+
           # screenshot
           "Mod+Shift+S".action.screenshot = [ ];
           "Mod+Shift+Alt+S".action.screenshot-screen = [ ];
