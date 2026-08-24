@@ -2,6 +2,6 @@
   imports = [
     ./browsers/zen.nix
     ./browsers/chromium.nix
-    ./browsers/firefox
+    ./browsers/firefox.nix
   ];
 }
