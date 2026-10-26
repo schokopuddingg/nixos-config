@@ -13,6 +13,7 @@
     flake.modules.nixos.virtualization
     flake.modules.nixos.print
     flake.modules.nixos.battery
+    flake.modules.nixos.nfs
   ];
 
   boot.initrd.luks.devices."luks-45feae73-f6ff-4c5c-a316-64b15f355fee".device =

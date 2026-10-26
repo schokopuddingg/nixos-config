@@ -77,6 +77,16 @@
     ffmpeg
     imagemagick
     gparted
+    slurp
+    hyprpicker
+    tesseract
+    zbar
+    jq
+    translate-shell
+    wf-recorder
+    wl-screenrec
+    gpu-screen-recorder
+
 
   ];
 }
