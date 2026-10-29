@@ -31,8 +31,6 @@
     ];
   };
 
-
-
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -71,14 +69,11 @@
     nmap
     busybox
 
-
     # Media
     superfile
     ffmpeg
     imagemagick
     gparted
-
-
 
   ];
 }

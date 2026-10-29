@@ -9,7 +9,6 @@
     flake.modules.nixos.networking
   ];
 
-
   # Enable networking
   networking.networkmanager.enable = true;
 
