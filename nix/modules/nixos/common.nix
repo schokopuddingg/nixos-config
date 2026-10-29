@@ -31,7 +31,7 @@
     ];
   };
 
-  # nixpkgs.config.allowUnfree = true;
+
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -70,22 +70,14 @@
     fastfetch
     nmap
     busybox
-    qalculate-qt
+
 
     # Media
     superfile
     ffmpeg
     imagemagick
     gparted
-    slurp
-    hyprpicker
-    tesseract
-    zbar
-    jq
-    translate-shell
-    wf-recorder
-    wl-screenrec
-    gpu-screen-recorder
+
 
 
   ];

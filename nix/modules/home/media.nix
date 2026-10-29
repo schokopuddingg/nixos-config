@@ -14,6 +14,7 @@
     localsend
     lmms
     picard
+    kid3
 
   ];
 }

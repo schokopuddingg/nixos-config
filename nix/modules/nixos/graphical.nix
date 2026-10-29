@@ -91,6 +91,17 @@
     flameshot
     wl-mirror
 
+    slurp
+    hyprpicker
+    tesseract
+    zbar
+    jq
+    translate-shell
+    wf-recorder
+    wl-screenrec
+    gpu-screen-recorder
+    qalculate-qt
+
     # VPN
     wireguard-ui
   ];
