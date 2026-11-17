@@ -15,6 +15,8 @@
     lmms
     picard
     kid3
+    qpwgraph
+    carla
 
   ];
 }
