@@ -29,6 +29,7 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
   };
 
   outputs =
@@ -42,4 +43,5 @@
         "olm-3.2.16"
       ];
     };
+
 }
