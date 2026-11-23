@@ -30,6 +30,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    sable = {
+          url = "git+https://git.sable.moe/SableClient/sable-next?ref=refs/tags/latest";
+          };
   };
 
   outputs =

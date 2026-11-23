@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
 
   home.packages = with pkgs; [
@@ -6,17 +6,12 @@
     signal-desktop
     whatsapp-electron
     gajim
-    ferdium
     element-desktop
     telegram-desktop
     discord
     thunderbird
-    tuba
     nheko
-    movim
-    commet-chat
-    fractal
-    chatty
+    inputs.sable.packages.${pkgs.stdenv.hostPlatform.system}.sable-desktop
 
   ];
 }
